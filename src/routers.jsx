@@ -5,6 +5,7 @@ import Contact from "./pages/contact";
 import ProtectRouterClient from "./components/ProtectRouterClient";
 import ProtectRouterAdmin from "./components/ProtectRouterAdmin";
 import Dashboard from "./pages/dashboard";
+import Client from "./pages/client";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
             {
                 path: '/contact',
                 Component: Contact
+            },
+            {
+                path: '/client',
+                Component: Client
             }
         ]
     },

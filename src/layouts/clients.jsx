@@ -6,7 +6,7 @@ function Clients() {
         <>
             <Navbar />
             <main>
-                <Outlet/>
+                <Outlet />
             </main>
         </>
     )

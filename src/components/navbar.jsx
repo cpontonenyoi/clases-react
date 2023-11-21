@@ -11,15 +11,13 @@ function Navbar() {
         navigate('/login')
     }
 
-    const simulatorChangeLocalstorage = () => {
-        localStorage.setItem('rol', 'ADMIN');  
-    }
     return (
         <nav style={style}>
             <Link to="/">Home</Link>
             <Link to="/contact">Contact</Link>
-            <a onClick={logout}>Logout</a>
-            <a onClick={simulatorChangeLocalstorage}>Simulator</a>
+            
+            <Link to="/client">Client</Link>
+            <Link onClick={logout}>Logout</Link>
         </nav>
     )
 }
