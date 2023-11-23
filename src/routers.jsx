@@ -6,6 +6,7 @@ import ProtectRouterClient from "./components/ProtectRouterClient";
 import ProtectRouterAdmin from "./components/ProtectRouterAdmin";
 import Dashboard from "./pages/dashboard";
 import Client from "./pages/client";
+import UpdateClient from "./pages/updateClient";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path: '/client',
                 Component: Client
+            },
+            {
+                path: '/client/:id',
+                Component: UpdateClient
             }
         ]
     },
